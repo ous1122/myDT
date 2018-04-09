@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
     @IBAction func tstart(_ sender: Any) { //스위치는 outlet, function 두개 다 입력해 주어야 작동한다.
         // 스위치 객체에 있어서 같은 스위치에 두가지의 기능을 같이 커넥션 시켜준다.
-        if tswit.isOn == true { //켰을 때
+        if tswit.isOn == true { //스위치를 켰을 때에 화면을 보여준다.
             myTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         }
         else {
