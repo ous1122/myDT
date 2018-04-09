@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             myTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         }
         else {
-            myTimer.invalidate() //시계를 멈춘다.
+            myTimer.invalidate() //시계를 멈추어 준다.
             timeLabel.text = "시계가 멈췄다." //시계가 멈췄을 때에 텍스트 지정
         }
         
