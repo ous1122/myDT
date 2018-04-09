@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         }
         else {
             myTimer.invalidate() //시계를 멈춘다.
-            timeLabel.text = "시계가 멈췄다."
+            timeLabel.text = "시계가 멈췄다." //시계가 멈췄을 때에 텍스트 지정
         }
         
     }
